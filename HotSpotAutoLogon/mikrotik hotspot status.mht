@@ -1,0 +1,116 @@
+From: "Zapisane przez program Windows Internet Explorer 7"
+Subject: mikrotik hotspot > status
+Date: Tue, 29 Sep 2009 19:07:25 +0200
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://192.168.2.1/status
+X-MimeOLE: Produced By Microsoft MimeOLE V6.0.6001.18049
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>mikrotik hotspot > status</TITLE>
+<META http-equiv=3Drefresh content=3D1186>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META http-equiv=3Dpragma content=3Dno-cache>
+<META http-equiv=3Dexpires content=3D-1>
+<STYLE type=3Dtext/css>TEXTAREA {
+	BORDER-RIGHT: #bbbbbb 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#bbbbbb 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 14px; PADDING-BOTTOM: =
+2px; MARGIN: 1px; BORDER-LEFT: #bbbbbb 1px solid; COLOR: #808080; =
+PADDING-TOP: 2px; BORDER-BOTTOM: #bbbbbb 1px solid; BACKGROUND-COLOR: =
+#fdfbfb
+}
+INPUT {
+	BORDER-RIGHT: #bbbbbb 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#bbbbbb 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 14px; PADDING-BOTTOM: =
+2px; MARGIN: 1px; BORDER-LEFT: #bbbbbb 1px solid; COLOR: #808080; =
+PADDING-TOP: 2px; BORDER-BOTTOM: #bbbbbb 1px solid; BACKGROUND-COLOR: =
+#fdfbfb
+}
+SELECT {
+	BORDER-RIGHT: #bbbbbb 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#bbbbbb 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 14px; PADDING-BOTTOM: =
+2px; MARGIN: 1px; BORDER-LEFT: #bbbbbb 1px solid; COLOR: #808080; =
+PADDING-TOP: 2px; BORDER-BOTTOM: #bbbbbb 1px solid; BACKGROUND-COLOR: =
+#fdfbfb
+}
+.tabula {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 11px; =
+BORDER-LEFT-COLOR: #c1c1c1; BORDER-BOTTOM-WIDTH: 1px; =
+BORDER-BOTTOM-COLOR: #c1c1c1; BORDER-TOP-COLOR: #c1c1c1; FONT-FAMILY: =
+verdana; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent; =
+BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #c1c1c1
+}
+BODY {
+	FONT-SIZE: 12px; COLOR: #737373; FONT-FAMILY: verdana
+}
+A {
+	FONT-SIZE: 12px; COLOR: #aaaaaa; TEXT-DECORATION: none
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #aaaaaa; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #aaaaaa; TEXT-DECORATION: none
+}
+A:active {
+	FONT-SIZE: 12px; COLOR: #aaaaaa; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #aaaaaa; BORDER-BOTTOM: #c1c1c1 1px dotted
+}
+IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium =
+none; BORDER-BOTTOM: medium none
+}
+TD {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-SIZE: 12px; PADDING-BOTTOM: =
+4px; PADDING-TOP: 4px
+}
+</STYLE>
+
+<SCRIPT language=3DJavaScript>=0A=
+<!--=0A=
+=0A=
+    function openLogout() {=0A=
+	if (window.name !=3D 'hotspot_status') return true;=0A=
+        open('http://192.168.2.1/logout', 'hotspot_logout', =
+'toolbar=3D0,location=3D0,directories=3D0,status=3D0,menubars=3D0,resizab=
+le=3D1,width=3D280,height=3D250');=0A=
+	window.close();=0A=
+	return false;=0A=
+    }=0A=
+//-->=0A=
+</SCRIPT>
+
+<META content=3D"MSHTML 6.00.6001.18183" name=3DGENERATOR></HEAD>
+<BODY bottomMargin=3D0 leftMargin=3D0 topMargin=3D0 rightMargin=3D0>
+<TABLE height=3D"100%" width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD vAlign=3Dcenter align=3Dmiddle>
+      <FORM name=3Dlogout onsubmit=3D"return openLogout()"=20
+      action=3Dhttp://192.168.2.1/logout>
+      <TABLE class=3Dtabula border=3D1><BR>
+        <DIV style=3D"TEXT-ALIGN: center">Welcome trial user!</DIV><BR>
+        <TBODY>
+        <TR>
+          <TD align=3Dright>IP address:</TD>
+          <TD>192.168.2.2</TD></TR>
+        <TR>
+          <TD align=3Dright>bytes up/down:</TD>
+          <TD>3.6 KiB / 5.6 KiB</TD></TR>
+        <TR>
+          <TD align=3Dright>connected / left:</TD>
+          <TD>15s / 19m45s</TD></TR>
+        <TR>
+          <TD align=3Dright>status refresh:</TD>
+          <TD>19m46s</TD></TR></TBODY></TABLE><BR><!-- user manager link=0A=
+<button =
+onclick=3D"document.location=3D'http://192.168.2.1/user?subs=3D'">status<=
+/button>=0A=
+<!-- end of user manager link --><INPUT type=3Dsubmit value=3D"log off"> =
+
+      </FORM></TD></TR></TBODY></TABLE></BODY></HTML>

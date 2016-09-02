@@ -1,0 +1,10 @@
+﻿HotSpotAutoLogon v1.0-beta - Automatyczne logowanie do routera MikroTik
+Data publikacji: 29 września 2009
+
+Nowe funkcje:
+
+** Zmiany (historia)
+Do zrobienia
+
+2009-09-29 v1.0-beta
+* pierwsza wersja

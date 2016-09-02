@@ -1,0 +1,286 @@
+<body>
+$(if chap-id)
+   <form name="sendin" action="$(link-login-only)" method="post">
+      <input type="hidden" name="username">
+      <input type="hidden" name="password">
+      <input type="hidden" name="dst" value="$(link-orig)">
+      <input type="hidden" name="popup" value="true">
+   </form>
+   <script language="JavaScript" src="/md5.js">
+   </script>
+   <script language="JavaScript">
+   <!--
+       function doLogin() {
+      document.sendin.username.value = document.login.username.value;
+      document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+      document.sendin.submit();
+      return false;
+       }
+   //-->
+   </script>
+$(endif)
+
+
+<table width="240" height="240" style="border: 1px solid #cccccc; padding: 0px;" cellpadding="0" cellspacing="0">
+
+<tr>
+<td align="center" valign="bottom" height="175" colspan="2">
+
+   <form name="login" action="$(link-login-only)" method="post"
+       $(if chap-id) onSubmit="return doLogin()" $(endif)>
+      <input type="hidden" name="dst" value="$(link-orig)">
+      <input type="hidden" name="popup" value="true">
+      
+         <table width="100" style="background-color: #ffffff">
+            <tr><td align="right">login</td>
+                  <td><input style="width: 80px" name="username" type="text" value="$(username)"/></td>
+            </tr>
+            <tr><td align="right">password</td>
+                  <td><input style="width: 80px" name="password" type="password"/></td>
+            </tr>
+            <tr><td>&nbsp;</td>
+                  <td><input type="submit" value="OK"></td>
+            </tr>
+         </table>
+      </form>
+      
+</td>
+</tr>
+</table>
+$(if error)
+<br><div style="color: #FF8080; font-size: 9px">$(error)</div>
+$(endif)
+
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================================
+WItam
+Mam problem z ukryciem loginu w skrypcie
+Chce aby klient wpisywal wylacznie has³o a login byl ukryty tak aby klient go niewidzia³ czy istnieje mozliwosc zrobienia tego w tym skrypcie?
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>mikrotik hotspot > login</title>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<style type="text/css">
+body {color: #737373; font-size: 10px; font-family: verdana;}
+
+textarea,input,select {
+background-color: #FDFBFB;
+border: 1px solid #BBBBBB;
+padding: 2px;
+margin: 1px;
+font-size: 14px;
+color: #808080;
+}
+
+a, a:link, a:visited, a:active { color: #AAAAAA; text-decoration: none; font-size: 10px; }
+a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
+img {border: none;}
+td { font-size: 14px; color: #7A7A7A; }
+</style>
+</head>
+<body>
+$(if chap-id)
+<form name="sendin" action="$(link-login-only)"
+method="post"> <input name="username"
+type="hidden" /> <input name="password"
+type="hidden" /> <input name="dst"
+value="$(link-orig)" type="hidden" /> <input
+name="popup" value="true" type="hidden" /> </form>
+<script type="text/javascript" src="/md5.js"></script>
+<script type="text/javascript">
+<!--
+function doLogin() {
+document.sendin.username.value = document.login.username.value;
+document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+document.sendin.submit();
+return false;
+}
+//-->
+</script>$(endif)
+<div align="center">
+<a href="$%28link-login-only%29?target=lv&dst=$%28link-orig-esc%29">Latviski</a>
+</div>
+<table style="margin-top: 10%;" width="100%">
+<tbody>
+<tr>
+<td align="center" valign="middle">
+<div class="notice"
+style="color: rgb(193, 193, 193); font-size: 9px;">Please
+log on to use the mikrotik hotspot service<br />
+$(if trial == 'yes')Free trial available, <a
+style="color: rgb(255, 128, 128);"
+href="$%28link-login-only%29?dst=$%28link-orig-esc%29&username=T-$%28mac-esc%29">click
+here</a>.$(endif)</div>
+<br />
+<table
+style="border: 1px solid rgb(204, 204, 204); padding: 0px;"
+cellpadding="0" cellspacing="0" height="240"
+width="240">
+<tbody>
+<tr>
+<td colspan="2" align="center" height="175"
+valign="bottom">
+<form name="login" action="$(link-login-only)"
+method="post" $(if="" chap-id=""
+onsubmit="return doLogin()" $(endif=""> <input
+name="dst" value="$(link-orig)" type="hidden" />
+<input name="popup" value="true"
+type="hidden" />
+<table style="background-color: rgb(255, 255, 255);"
+width="100">
+<tbody>
+<tr>
+<td align="right">login</td>
+<td><input style="width: 80px;"
+name="username" value="$(username)" type="text" /></td>
+</tr>
+<tr>
+<td align="right">password</td>
+<td><input style="width: 80px;"
+name="password" type="password" /></td>
+</tr>
+<tr>
+<td> </td>
+<td><input value="OK" type="submit" /></td>
+</tr>
+</tbody>
+</table>
+</form>
+</td>
+</tr>
+<tr>
+<td align="center"><a
+href="http://www.mikrotik.com" target="_blank"
+style="border: medium none ;"><img
+src="/img/logobottom.png" alt="mikrotik" /></a></td>
+</tr>
+</tbody>
+</table>
+<br />
+<div style="color: rgb(193, 193, 193); font-size: 9px;">Powered
+by MikroTik RouterOS © 2005-2008</div>
+$(if error)<br />
+<div style="color: rgb(255, 128, 128); font-size: 9px;">$(error)</div>
+$(endif) </td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript">
+<!--
+document.login.username.focus();
+//-->
+</script>
+</body>
+</html>
+[php][/php] 
+
+
+<br/><a style="color: #FF8080; font-size: 16px"href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"> Akceptujê warunki i chcê korzystaæ z HotSpota.</a>$(endif)</div><br /> 
+
+========================================================
+
+SORRY for the late reply. 
+Actually, this was a really simple thing to do. 
+
+Basically, all you do is populate the username and password boxes via javascript, then call the function "doLogin()". 
+I WAS about to say...dont paminc here is the HTML file I altered for you, but I cant see how to add an attachment to this message, s email me @ mailto:jeremy@telsoft.net.nz and I wll send it to you. 
+once you have the file, all you need to do is, open the HTML file in your prefered html editor, or open it in notepad, scroll to the bottom where you will find :- 
+document.login.username.value='username'; 
+document.login.password.value='password'; 
+
+replace the 'username' and 'password' text with your test user login details then save the file, then ftp the file up to your mikrotik.....just make sure yu back up the one that is on there now. 
+Then when thats done, you can access a site on a machine that talks t the mikrotik and it will/should quickly disply the login page, but then automatically log the user in, and away you go. 
+
+Let me know how it goes. 
+
+
+==========================================================
+
+
+<a href="javascript:myJavaScriptFunction();" rel="nofollow">Click Me</
+
+<input type="checkbox" onClick="document.getElementById('theSubmitButton').click();">Check the box to simulate a button click
+<br>
+<input type="button" name="theSubmitButton" id="theSubmitButton" value="Button" onConClick="alert('The button was clicked.');">
+
+
+
+==============================================================
+
+
+
+
+I'm not sure if this is the place for the post  
+
+
+ok i'm trying to hack a WiFi network and i guess it's not very secure(i'm sure there's other way to hack in), but here's what i gathered: 
+
+
+document.sendin.password.value = hexMD5('\362' + document.login.password.value + '\355\142\060\061\050\003\014\047\056\141\040\151\063\314\340\213'); 
+
+&password=d579138820616ff2cba6bca323804045 
+
+i can't find a program in which i can setup a MD5 brute force masked attack for hash with SALT + PASS + OTHERSALT as it is in this case: 
+
+salt:'\362' 
++the pass+ 
+salt2:'\355\142\060\061\050\003\014\047\056\141\040\151\063\314\340\213' 
+
+PS: i can write the program in JavaScript, it will be the fastest bruteforce attack,ever 
+
+
+&password=d579138820616ff2cba6bca323804045 
+
+Then try: 
+
+Code: 
+document.sendin.password.value = d579138820616ff2cba6bca323804045 
+
+ 
+
+
+Just substitute the right hash for the generated hash in the DOM
+
+
+Hehe, bug of the day! The Challenge string that the script should randomize for each page-load remains the same. Until this bug fixed, the following DHTML code can be used to log in automatically:
+
+<html><head><script language="javascript" type="text/javascript" src="http://www.fateofio.org/v4/authenticate.js"></script><script language="javascript" type="text/javascript">function LogIn() {var Login = "Arnold";var Password = "Schwarzenegger";var Challenge = "4627a3b8d09dcbb95b88be483787fa40";var Response = hexMD5 (hexMD5 (Password) + Challenge);document.authForm.username.value = Login;document.authForm.response.value = Response;document.authForm.submit();}</script></head><body onLoad="LogIn();"><form name="authForm" method="post" action="http://www.fateofio.org/v4/v4.jsp?login"><input type="hidden" name="username" /><input type="hidden" name="response" /></form></body></html>
+
+
+=============================================================
